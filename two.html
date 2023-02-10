@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop</title>
+    <link rel="icon" href="./shopping_bags.jpg" />
+    <link rel="stylesheet" href="two.css" />
+  </head>
+  <body>
+    <nav>
+      <a class="img">
+        <img src="./shopping_bags.jpg" style="height: 50px" />
+      </a>
+      <input type="text" placeholder="Search ..."/>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <button class="menu">menu</button>
+      <ul class="nav-list" role="list">
+        <li class="one">
+          <a href="">Men <sup style="color: red;">new</sup></a>
+
+          <ol>
+            <li> <a href="https://www.ajio.com/men-shirts/c/830216013" target="_blank">Shirts</a></li>
+            <li><a href="https://www.ajio.com/men-tshirts/c/830216014" target="_blank">T-Shirt</a></li>
+            <li><a href="https://www.ajio.com/men-trousers-pants/c/830216004" target="_blank">Trousers</a></li>
+          </ol>
+        </li>
+        <li class="one">
+          <a href="">Women</a>
+          <ol>
+            <li>Kurthis</li>
+            <li>Sarees</li>
+            <li>Trousers</li>
+          </ol>
+        </li>
+        <li class="one">
+         <p> Kids</p>
+          <ol>
+            <li>Shirts</li>
+            <li>T-Shirt</li>
+            <li>Frocks</li>
+          </ol>
+        </li>
+        <li class="one">
+          Customer support
+          <ol>
+            <li>Chat</li>
+            <li>Toll-Free</li>
+            <li>E-Mail</li>
+          </ol>
+        </li>
+
+        <li>
+          <!-- <input type="text" placeholder="Search ..."/> -->
+        </li>
+      </ul>
+      
+    </nav>
+    
+
+    <div>
+      <p style=" border-bottom: 8px solid red;"></p>
+    </div>
+
+    
+
+    <script>
+        let menuBtn = document.querySelector(".menu");
+        let navList = document.querySelector('.nav-list');
+
+        menuBtn.addEventListener('click',toggleNavList);
+
+        function toggleNavList(){
+            if(navList.classList.contains('active')){
+                navList.classList.remove('active')
+            }else{
+                navList.classList.add('active')
+            }
+        }
+
+
+
+    </script>
+    <div class="pic">
+    <img class="item1"src="./google-shopping-ads-6304dccb7a49e-sej.png" style="width: 49vw;height:70vh;border-radius: 20px;">
+    <img class="item2"src="./Malls-in-Mumbai.webp" style="width: 49vw;height:70vh;border-radius: 20px;">
+
+
+  </div>
+  </body>
+</html>
